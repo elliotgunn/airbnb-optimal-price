@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+	<div class="content">
+			{% if prediction is defined %}
+                Sepal Length: {{ accommodates }}<br>
+                Sepal Width: {{ sepal_width }}<br>
+                Petal Length: {{ petal_length }}<br>
+                Petal Width: {{ petal_width }}<br>
+                <br>
+                Is a {{ prediction }}.
+			{% else %}
+				Please fill out the form below!
+			{% endif %}
+	</div>
+
+	{% block page_content %}
+	<div class="content">
+		<form method="POST">
+
+			{{ form.accomodates.label }} {{ form.accomodates() }}
+			<br>
+			{{ form.bedrooms.label }} {{ form.bedrooms() }}
+			<br>
+			{{ form.number_of_reviews.label }} {{ form.number_of_reviews() }}
+			<br>
+			{{ form.wifi.label }} {{ form.wifi() }}
+			<br>
+			<br>
+			{{ form.submit() }}
+		</form>
+	</div>
+	{% endblock %}
+
+
+<script> var i =  [1,2,3] </script>
+{% endblock %}
