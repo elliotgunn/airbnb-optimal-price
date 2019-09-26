@@ -9,7 +9,15 @@ The app works by processing incoming data in Flask using the `request` object.
 
 receives JSON data, converts it to a numpy array, generates a prediction, and then (sends to FE?) as JSON data again.
 
-Create an endpoint for the user. The Flask routes serve as the API endpoints. 
+Create an endpoint for the user. The Flask routes serve as the API endpoints.
+
+The app receives the JSON data in this format:
+
+'''
+accommodates:
+bedrooms:
+
+'''
 
 
 
