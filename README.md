@@ -4,7 +4,7 @@ This is the API for a Flask web app that uses historical booking data to predict
 The data science part consists of data cleaning, wrangling, and trained on a model. The model was pickled and passed to the data engineering team. 
 
 
-We (@elliotgunn and ) created Flask app, deployed on Heroku, to function as an API. The API connects to the backend where the web dev team took over for full-stack deployment.
+We ([@elliotgunn](https:www.github/elliotgunn) and) created Flask app, deployed on Heroku, to function as an API. The API connects to the backend where the web dev team took over for full-stack deployment.
 
 The app works by processing incoming JSON data using the `request` object:
 
