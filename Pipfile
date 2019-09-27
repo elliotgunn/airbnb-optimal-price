@@ -8,6 +8,10 @@ verify_ssl = true
 [packages]
 flask = "*"
 numpy = "*"
+requests = "*"
+gensim = "*"
+sklearn = "*"
+category-encoders = "*"
 
 [requires]
 python_version = "3.7"
